@@ -1,0 +1,223 @@
+/* A BIT OF TYPOGRAPHY */
+
+.body {
+    font-family: 'Bitter';
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5;
+    color: rgba(57, 133, 171, 0.48);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+a:active,
+a:link,
+a:visited {
+    text-decoration: underline;
+    color: black;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: black;
+}
+
+b {
+    font-weight: 700;
+}
+
+p {
+    margin: 2em 0 2em 0;
+}
+
+.highlighted {
+    background-color: darkgray;
+}
+
+.strongtext {
+    font-size: 20px;
+}
+
+.p-links {
+    font-size: 20px;
+    color: white;
+}
+
+.techimages {
+    height: 200px;
+    width: 200px;
+}
+
+.techtext {}
+
+.centeredtext {
+    text-align: center;
+}
+
+.moved-right {
+    text-align: right;
+}
+
+
+/*Content IDs+Section IDs*/
+
+#actioncall {
+    text-align: center;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.borders {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+/*IMAGE IDS*/
+
+#glenn {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-right: 20x;
+}
+
+
+}
+#laptop {
+    height: 200px;
+}
+#glentable {
+    padding-right: 20px;
+}
+
+/* CENTRED CONTENT */
+.content {
+    margin: 2em auto;
+    max-width: 40em;
+    padding: 0 1em;
+    background-color: white;
+    padding: 20px;
+    border: 20px solid #FAFAFA;
+    line-height: 1.8;
+    box-shadow: -6px 6px 32px -1px rgba(0, 0, 0, 0.75);
+}
+
+/* LOGO */
+.logo {
+    width: 520px;
+    /* the negative margin trick */
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: -120px;
+}
+#toplogo {
+    margin-top: 50px;
+}
+.logo img {
+    width: 100%;
+}
+
+/* FULL-SIZE IMAGES */
+html,
+body {
+    height: 100%;
+    background-color: #3949AB;
+}
+.full {
+    height: 100%;
+    background-color: darkgray;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#one {
+    background-image: url("images/topbg.jpeg");
+    height: 60%;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+#two {
+    background-image: url(images/snowdenlarge.jpg);
+    height: 70%;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+#three {
+    background-image: url("images/surv.jpg");
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    height: 70%;
+}
+#four {
+    background-image: url(../images/grab.jpg);
+}
+#five {
+    background-image: url("images/bottom.jpeg");
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    height: 70%;
+}
+
+/* MAILCHIMP FORM */
+#mc_embed_signup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 13em;
+    margin: -6.5em 0 0 -15em;
+    background: darkgray;
+    border: 2px solid black;
+}
+input {
+    box-sizing: border-box;
+    width: 100%;
+}
+input[type="email"] {
+    padding: .5em;
+}
+input[type="submit"] {
+    margin: 1em 0;
+    background-color: black;
+    color: white;
+    border-radius: .25em;
+    border: none;
+    padding: .5em;
+    /*font-size: 1.5em;*/
+}
+
+/*Phone Animation*/
+.button {
+    background: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+#revealNext {
+    top: 220px;
+    left: 300px;
+    transform: rotate(-20deg);
+}
+#invertedImage {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
