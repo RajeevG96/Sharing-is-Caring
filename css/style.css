@@ -221,3 +221,8 @@ input[type="submit"] {
     transition: opacity 1s;
     z-index: 1;
 }
+#sending {
+    z-index: +1;
+    position: absolute;
+    margin-top: -500;
+}
