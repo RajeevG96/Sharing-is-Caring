@@ -8,6 +8,9 @@
     color: rgba(57, 133, 171, 0.48);
 }
 
+
+/*Page links*/
+
 a:hover {
     text-decoration: underline;
     color: red;
@@ -17,18 +20,23 @@ a:active,
 a:link,
 a:visited {
     text-decoration: underline;
-    color: black;
 }
+
+
+/*Action call links*/
 
 h1 {
     text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: black;
 }
 
-h1,
 h2,
 h3 {
     font-weight: 700;
     color: black;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 b {
@@ -37,6 +45,7 @@ b {
 
 p {
     margin: 2em 0 2em 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .highlighted {
@@ -49,7 +58,12 @@ p {
 
 .p-links {
     font-size: 20px;
+    color: red;
+}
+
+.actionlinks {
     color: white;
+    padding: 25px;
 }
 
 .techimages {
@@ -67,17 +81,54 @@ p {
     text-align: right;
 }
 
+#pagehead {
+    margin: 2em auto;
+    max-width: 40em;
+    padding-right: 0 1em;
+    padding-left: 0 1em;
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.8;
+    box-shadow: -6px 6px 32px -1px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+}
+
+
+/*flex to center stuff*/
+
+.h-centred {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.v-centred {
+    display: flex;
+    align-items: center;
+}
+
 
 /*Content IDs+Section IDs*/
 
 #actioncall {
-    text-align: center;
+    /*text-align: center;
     background-color: red;
     border: 2px solid white;
     border-radius: 6px;
     color: white;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;*/
+    color: #202020;
+    background-color: #E03C31;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+    font-size: 30px;
+    padding: 80px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
 }
 
 .borders {
@@ -98,7 +149,7 @@ p {
 
 }
 #laptop {
-    height: 200px;
+    height: 150px;
 }
 #glentable {
     padding-right: 20px;
@@ -118,17 +169,7 @@ p {
 
 /* LOGO */
 .logo {
-    width: 520px;
-    /* the negative margin trick */
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -260px;
-    margin-top: -120px;
-}
-#toplogo {
-    margin-top: 50px;
+    width: 270px;
 }
 .logo img {
     width: 100%;
@@ -138,32 +179,57 @@ p {
 html,
 body {
     height: 100%;
-    background-color: #3949AB;
+    background-color: #005f6b;
 }
 .full {
     height: 100%;
     background-color: darkgray;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     position: relative;
 }
 #one {
     background-image: url("images/topbg.jpeg");
-    height: 60%;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+    height: 37%;
+    align-items: flex-end;
+}
+
+/* see more on https://una.im/CSSgram/ */
+#one:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: #383838;
+    mix-blend-mode: lighten;
 }
 #two {
     background-image: url(images/snowdenlarge.jpg);
     height: 70%;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+}
+#two:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: radial-gradient(circle, transparent 70%, #222 110%);
+    mix-blend-mode: multiply;
+    /*opacity: 0.4;
+    filter: alpha(opacity=40);*/
 }
 #three {
     background-image: url("images/surv.jpg");
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    height: 70%;
+    /*opacity: 0.4;
+filter: alpha(opacity=40);*/
+    
+    height: 50%;
 }
 #four {
     background-image: url(../images/grab.jpg);
@@ -172,7 +238,7 @@ body {
     background-image: url("images/bottom.jpeg");
     opacity: 0.4;
     filter: alpha(opacity=40);
-    height: 70%;
+    height: 0%;
 }
 
 /* MAILCHIMP FORM */
@@ -210,9 +276,8 @@ input[type="submit"] {
     cursor: pointer;
 }
 #revealNext {
-    top: 220px;
-    left: 300px;
-    transform: rotate(-20deg);
+    margin-top: -100px;
+    margin-left: 350px;
 }
 #invertedImage {
     top: 0;
