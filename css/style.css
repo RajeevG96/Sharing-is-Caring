@@ -173,6 +173,7 @@ p {
 }
 .logo img {
     width: 100%;
+    max-height: 22em;
 }
 
 /* FULL-SIZE IMAGES */
